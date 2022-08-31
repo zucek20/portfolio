@@ -1,0 +1,105 @@
+@import "variables";
+
+section.about {
+  header {
+    height: 700px;
+    background: url("../img/texture.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    img {
+      border-radius: 30px;
+      height: 350px;
+      width: 350px;
+    }
+
+    div.heading {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+
+      p {
+        margin-top: -10px;
+        margin-bottom: 10px;
+      }
+
+      a {
+        border: 2px solid $main;
+        color: $main;
+        background-color: $dark;
+        border-radius: 30px;
+        padding: 5px 15px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: 0.2s;
+
+        &:hover {
+          color: $dark;
+          background-color: $main;
+        }
+      }
+    }
+  }
+
+  div.wrap {
+    max-width: 1200px;
+    margin: auto;
+
+    h2 {
+      text-align: center;
+      margin: 100px 10px;
+    }
+
+    article {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 50px;
+
+      p {
+        border: 2px solid $main;
+        padding: 30px;
+        border-radius: 20px;
+        margin: 10px;
+      }
+
+      img {
+          animation-name: desk;
+          animation-duration: 3s;
+          animation-fill-mode: both;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          max-width: 600px;
+      }
+    }
+
+  }
+}
+
+// animation for desk png
+@keyframes desk {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  section.about {
+    div.wrap {
+      article {
+        flex-direction: column;
+      }
+    }
+  }
+}

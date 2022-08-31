@@ -1,2 +1,35 @@
-@import "variables"
+@import "variables";
 
+footer {
+  height: 190px;
+  background: linear-gradient(180deg, #000535 0%, #00794E 100%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+  
+  p {
+    transform: translateY(20px);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.605);
+  }
+  
+  a {
+    transform: translateY(20px);
+    font-size: 14px;
+    text-decoration: none;
+    color: #aaaaaa;
+    color: rgb(0, 132, 255);
+
+    &:visited {
+      color: rgba(0, 133, 255, 0.8);
+    }
+    
+    &:hover {
+      text-decoration: underline;
+      color: rgba(55, 158, 255, 0.988);
+    }
+  }
+}
