@@ -24,3 +24,6 @@ Project contains standard router architecure based on isolated components in cod
 ## Deployment
 
 Site is deployed through netlify here: [Portfolio](https://pawelizdebski.netlify.app/)
+
+## License
+[MIT License](https://opensource.org/licenses/MIT)
