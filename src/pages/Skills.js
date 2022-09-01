@@ -67,15 +67,15 @@ export default function Skills() {
                 <p>Figma</p>
               </figure>
               <figure>
-                <img src={designer} alt="designer" />
+                <img src={designer} alt="affinity_designer" />
                 <p>Affinity Designer</p>
               </figure>
               <figure>
-                <img src={photo} alt="photo" />
+                <img src={photo} alt="affinity_photo" />
                 <p>Affinity Photo</p>
               </figure>
               <figure>
-                <img src={publisher} alt="publisher" />
+                <img src={publisher} alt="affinity_publisher" />
                 <p>Affinity Publisher</p>
               </figure>
             </div>

@@ -33,7 +33,9 @@ section.contact {
         display: block;
       }
 
-      
+      label {
+        max-width: 100%;
+      }
 
       input, textarea {
         margin-top: 5px;
@@ -52,6 +54,7 @@ section.contact {
 
       textarea {
         width: 100%;
+        box-sizing: border-box;
         border-radius: 20px 20px 0 20px;
         resize: vertical;
       }

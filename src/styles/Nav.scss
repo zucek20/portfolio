@@ -16,6 +16,14 @@ nav.topNav {
     display: flex;
     justify-content: space-between;
     
+    .burger {
+      display: none;
+    }
+
+    .times {
+      display: none;
+    }
+
 
     img.logoTop {
       width: 60px;
@@ -48,4 +56,73 @@ nav.topNav {
       }
     }
   }
+}
+
+div#menu.false {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  transition: .3s;
+  height: 0px;
+  background-color: $main;
+  top: 70px;
+
+  .link {
+    font-size: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav.topNav {
+    div.navWrap {
+      div.links {
+        display: none;
+      }
+
+      .burger,
+      .times {
+        display: block;
+        z-index: 4;
+        width: 40px;
+        height: 40px;
+        padding: 15px;
+        cursor: pointer;
+
+      }  
+    }
+
+    
+  }
+  div#menu.true {
+    top: 70px;
+    position: fixed;
+    width: 100%;
+    background-color: $main;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    transition: .3s; 
+    z-index: 5;
+    
+
+    .link {
+      color: $dark;
+      text-decoration: none;
+      font-weight: 600;
+      transition: .2s;
+      transform: translateY(-70px);
+      border-radius: 30px;
+      border: 2px solid $dark;
+      padding: 5px 15px;
+      display: block;
+
+      &:hover {
+        color: $main;
+        background-color: $dark;
+      }
+    }
+    }
 }

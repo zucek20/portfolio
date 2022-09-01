@@ -14,6 +14,7 @@ section.about {
       border-radius: 30px;
       height: 350px;
       width: 350px;
+      margin-left: 5px;
     }
 
     div.heading {
@@ -99,6 +100,30 @@ section.about {
     div.wrap {
       article {
         flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section.about {
+    header {
+      // height: 900px;
+      flex-direction: column;
+      gap: 40px;
+      img {
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+      }
+    }
+
+    div.wrap {
+      article {
+        img {
+          max-width: 100%;
+          margin: 10px;
+        }
       }
     }
   }

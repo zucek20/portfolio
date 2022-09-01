@@ -11,7 +11,8 @@ section.projects {
   div.wrap {
     max-width: 1200px;
     margin: auto;
-    padding-top: 130px;
+    padding: 130px 5px 0 5px;
+    
 
     a.more {
       color: $main;
@@ -88,6 +89,45 @@ section.projects {
                 background-color: $main;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 940px){
+  section.projects {
+    div.wrap{
+      article {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        div.text {
+          width: 100%;
+
+        }
+        div.other {
+          width: 100%;
+          div.top {
+            justify-content: space-around;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.projects {
+    div.wrap {
+      article {
+        div.other {
+          display: flex;
+          flex-direction: column-reverse;
+          div.top {
+            flex-direction: column-reverse;
           }
         }
       }
