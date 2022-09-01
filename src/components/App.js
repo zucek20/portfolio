@@ -8,12 +8,13 @@ import Projects from "../pages/Projects"
 import Skills from "../pages/Skills"
 import Contact from "../pages/Contact"
 import NotFound from "../pages/NotFound"
+import Provider from "./AppContext"
 
 function App() {
   const location = useLocation()
 
   return (
-    <>
+    <Provider>
       <Nav />
 
       <main>
@@ -29,7 +30,7 @@ function App() {
 
         <Footer />
       </main>
-    </>
+    </Provider>
   );
 }
 

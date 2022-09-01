@@ -7,7 +7,7 @@ nav.topNav {
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 3;
-  
+
   .navWrap {
     max-width: 1200px;
     padding: 0 5px;
@@ -15,7 +15,24 @@ nav.topNav {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+
+    img.flag {
+      width: 40px;
+      height: 20px;
+      display: block;
+      cursor: pointer;
+      margin-right: 8px;
+      border-radius: 5px;
+      &:hover {
+        outline: 2px solid $main;
+      }
+    }
+
+    img.flagMobile {
+      display: none;
+    }
+
     .burger {
       display: none;
     }
@@ -23,7 +40,6 @@ nav.topNav {
     .times {
       display: none;
     }
-
 
     img.logoTop {
       width: 60px;
@@ -47,8 +63,8 @@ nav.topNav {
         padding: 5px 15px;
         font-weight: 500;
         text-decoration: none;
-        transition: .2s;
-        
+        transition: 0.2s;
+
         &:hover {
           color: $dark;
           background-color: $main;
@@ -62,13 +78,17 @@ div#menu.false {
   width: 100%;
   position: fixed;
   display: flex;
-  transition: .3s;
+  transition: 0.3s;
   height: 0px;
   background-color: $main;
   top: 70px;
 
   .link {
     font-size: 0px;
+  }
+
+  .flagMobile {
+    display: none;
   }
 }
 
@@ -87,11 +107,8 @@ div#menu.false {
         height: 40px;
         padding: 15px;
         cursor: pointer;
-
-      }  
+      }
     }
-
-    
   }
   div#menu.true {
     top: 70px;
@@ -104,15 +121,14 @@ div#menu.false {
     justify-content: center;
     gap: 50px;
     align-items: center;
-    transition: .3s; 
+    transition: 0.3s;
     z-index: 5;
-    
 
     .link {
       color: $dark;
       text-decoration: none;
       font-weight: 600;
-      transition: .2s;
+      transition: 0.2s;
       transform: translateY(-70px);
       border-radius: 30px;
       border: 2px solid $dark;
@@ -124,5 +140,17 @@ div#menu.false {
         background-color: $dark;
       }
     }
+
+    .flagMobile {
+      display: block;
+      width: 40px;
+      height: 20px;
+      display: block;
+      cursor: pointer;
+      border-radius: 5px;
+      &:hover {
+        outline: 2px solid $main;
+      }
     }
+  }
 }

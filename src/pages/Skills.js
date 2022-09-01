@@ -13,11 +13,115 @@ import designer from "../img/stack/designer.png";
 import publisher from "../img/stack/publisher.png";
 import photo from "../img/stack/photo.png";
 import tablet from "../img/tablet.svg";
+import { AppContext } from "../components/AppContext"
+import { useContext } from "react";
+
 
 export default function Skills() {
+  const {isEng} = useContext(AppContext)
+
   return (
     <Animated>
-      <section className="skills">
+      {isEng ? (
+        <section className="skills">
+        <img src={patternSkills} alt="pattern" className="patternSkills" />
+
+        <div className="wrap">
+          <h2>Skills</h2>
+
+          <div className="stack">
+            <div className="head">
+              <h3>My stack</h3>
+              <div className="green"></div>
+            </div>
+
+            <div className="mainGallery">
+              <figure>
+                <img src={reactjs} alt="react" />
+                <p>React</p>
+              </figure>
+              <figure>
+                <img src={js} alt="js" />
+                <p>JavaScript</p>
+              </figure>
+              <figure>
+                <img src={sass} alt="sass" />
+                <p>Sass/Scss</p>
+              </figure>
+              <figure>
+                <img src={css} alt="css" />
+                <p>CSS3</p>
+              </figure>
+              <figure>
+                <img src={html} alt="html" />
+                <p>HTML5</p>
+              </figure>
+              <figure>
+                <img src={git} alt="git" />
+                <p>Git</p>
+              </figure>
+            </div>
+
+            <p className="other">Other:</p>
+            <div className="otherGallery">
+              <figure>
+                <img src={vscode} alt="vscode" />
+                <p>VS Code</p>
+              </figure>
+              <figure>
+                <img src={figma} alt="figma" />
+                <p>Figma</p>
+              </figure>
+              <figure>
+                <img src={designer} alt="affinity_designer" />
+                <p>Affinity Designer</p>
+              </figure>
+              <figure>
+                <img src={photo} alt="affinity_photo" />
+                <p>Affinity Photo</p>
+              </figure>
+              <figure>
+                <img src={publisher} alt="affinity_publisher" />
+                <p>Affinity Publisher</p>
+              </figure>
+            </div>
+          </div>
+
+          <div className="design">
+            <div className="head">
+              <h3>Design</h3>
+              <div className="green"></div>
+            </div>
+            <article>
+              <p>
+              In addition to programming, I also design websites, web applications and their interfaces, maintaining the appropriate UX and UI practices and aesthetics.
+                <br />
+                <br />
+                I can use tools such as Figma to design interfaces/layouts and the Affinity software suite to create 2D graphics for projects and StyleGuides in them.
+                <br />
+                <br />
+                I can implement a responsive design dedicated to mobile devices, and use "Mobile first" techique.
+              </p>
+              <img src={tablet} alt="graphic tablet" />
+            </article>
+          </div>
+
+          <div className="otherSkills">
+            <div className="head">
+              <h3>Other skills</h3>
+              <div className="green"></div>
+            </div>
+            <ul>
+              <li>English - B2</li>
+              <li>Ability to work in a team</li>
+              <li>Ability to work under pressure</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      ) : (
+
+        <section className="skills">
         <img src={patternSkills} alt="pattern" className="patternSkills" />
 
         <div className="wrap">
@@ -96,7 +200,7 @@ export default function Skills() {
                 2D na potrzeby projektów oraz StyleGuide-y.
                 <br />
                 <br />
-                Potrafię zaimplementować responsywny design prystosowany do urządzeń mobilnych, a także używać techniki
+                Potrafię zaimplementować responsywny design przystosowany do urządzeń mobilnych, a także używać techniki
                 “mobile first”.
               </p>
               <img src={tablet} alt="graphic tablet" />
@@ -116,6 +220,7 @@ export default function Skills() {
           </div>
         </div>
       </section>
+      )}
     </Animated>
   );
 }

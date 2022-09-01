@@ -2,8 +2,12 @@ import Animated from "../components/Animated";
 import "../styles/About.scss";
 import prof from "../img/prof.jpg";
 import desk from "../img/desk.png"
+import { AppContext } from "../components/AppContext"
+import { useContext } from "react";
+
 
 export default function About() {
+  const {isEng} = useContext(AppContext)
   const downloadFile = () => {
     fetch("CV_Paweł_Izdebski.pdf").then((response) => {
       response.blob().then((blob) => {
@@ -19,15 +23,16 @@ export default function About() {
   return (
     <Animated>
       <section className="about">
+        
         <header>
           <img src={prof} alt="profile img" />
           <div className="heading">
-            <h1>Cześć!</h1>
-            <p>
-              Jestem Paweł Izdebski <br />
-              Front-end developer i UX/UI designer
+            <h1>{isEng ? "Hi!" : "Cześć!"}</h1>
+            <p>{isEng ? "I am Paweł Izdebski" : "Jestem Paweł Izdebski"}
+               <br />
+              Front-end developer {isEng ? "and" : "i"} UX/UI designer
             </p>
-            <button onClick={downloadFile}>Pobierz CV</button>
+            <button onClick={downloadFile}>{isEng ? "Download resume" : "Pobierz CV"}</button>
             <a href="https://github.com/zucek20" target="_blank" rel="noreferrer">
               GitHub
             </a>
@@ -35,14 +40,14 @@ export default function About() {
         </header>
 
         <div className="wrap">
-          <h2>Kilka słów o mnie</h2>
+          <h2>{isEng ? "About me" : "Kilka słów o mnie"}</h2>
           <article>
             <p>
-              Jestem początkującym front-end React developerem, który rozwija się także w projektowaniu graficznym
-              interfejsów użytkownika i tworzeniu grafik 2D.
-              <br/><br/> 
-              Tworze swoje własne projekty w Figmie i zestawie Affinity,
-              by potem je przenieść na kod. Rozwiązywanie problemów w programowaniu daje mi nieporównywalną satysfakcję za każdym razem.
+              {isEng ? "I am a beginner React front-end developer who also develops in graphic design of user interfaces and creating 2D graphics." : "Jestem początkującym front-end React developerem, który rozwija się także w projektowaniu graficznym interfejsów użytkownika i tworzeniu grafik 2D."}
+              
+              <br/><br/>
+              {isEng ? "I create my own designs in Figma and the Affinity set, and then transfer them to code. Solving problems in programming gives me incomparable satisfaction every time." : "Tworze swoje własne projekty w Figmie i zestawie Affinity, by potem je przenieść na kod. Rozwiązywanie problemów w programowaniu daje mi nieporównywalną satysfakcję za każdym razem."} 
+              
             </p>
             <img src={desk} alt="desk" />
           </article>
