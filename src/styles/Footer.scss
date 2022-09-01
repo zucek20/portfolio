@@ -20,8 +20,7 @@ footer {
     transform: translateY(20px);
     font-size: 14px;
     text-decoration: none;
-    color: #aaaaaa;
-    color: rgb(0, 132, 255);
+    color: white;
 
     &:visited {
       color: rgba(0, 133, 255, 0.8);
@@ -29,7 +28,7 @@ footer {
     
     &:hover {
       text-decoration: underline;
-      color: rgba(55, 158, 255, 0.988);
+      color: $main;
     }
   }
 }
