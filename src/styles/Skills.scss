@@ -4,10 +4,12 @@ section.skills {
   img.patternSkills {
     height: 700px;
     position: absolute;
-    left: 0;
+    right: 0;
     z-index: -1;
     margin-top: 130px;
     opacity: .8;
+    max-width: 1000px;
+    transform: scale(-1,1);
   }
 
   div.wrap {
