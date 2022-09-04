@@ -84,7 +84,8 @@ export default function Contact() {
               <p>789 371 234</p>
             </figure>
             <figure>
-              <img src={linkedin} alt="LinkedIn icon" />
+              
+              <a href="https://www.linkedin.com/in/pawe%C5%82-izdebski-7b3697199/" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn icon" /></a>
               <a href="https://www.linkedin.com/in/pawe%C5%82-izdebski-7b3697199/" target="_blank" rel="noopener noreferrer">Linkedin</a>
             </figure>
           </div>

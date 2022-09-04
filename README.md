@@ -19,7 +19,9 @@ Project contains standard router architecure based on isolated components in cod
 * Scss
 
 ## Design 
- I Used Figma to design the whole interface and Affinity suite to make few 2D graphics
+ I Used Figma to design the whole interface and Affinity suite to make few 2D graphics.
+ 
+ [Figma project](https://www.figma.com/file/eDp4V2lij6dEZMG4jYA8eD/Portfolio?node-id=24%3A122)
 
 ## Deployment
 

@@ -4,10 +4,12 @@ import prof from "../img/prof.jpg";
 import desk from "../img/desk.png"
 import { AppContext } from "../components/AppContext"
 import { useContext } from "react";
+import { NavLink } from "react-router-dom";
 
 
 export default function About() {
-  const {isEng} = useContext(AppContext)
+  const { isEng } = useContext(AppContext)
+
   const downloadFile = () => {
     fetch("CV_Paweł_Izdebski.pdf").then((response) => {
       response.blob().then((blob) => {
@@ -19,6 +21,25 @@ export default function About() {
       });
     });
   };
+
+  const downloadFileEng = () => {
+    fetch("CV_Pawel_Izdebski_ENG.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Resume Paweł Izdebski.pdf";
+        alink.click();
+      });
+    });
+  };
+
+  function timeoutScroll() {
+    setTimeout(() => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }, 300)
+  }
 
   return (
     <Animated>
@@ -32,7 +53,16 @@ export default function About() {
                <br />
               Front-end developer {isEng ? "and" : "i"} UX/UI designer
             </p>
-            <button onClick={downloadFile}>{isEng ? "Download resume" : "Pobierz CV"}</button>
+            {isEng ? (
+              <button onClick={downloadFileEng}>Download resume</button>
+
+            ): (
+              <button onClick={downloadFile}>Pobierz CV</button>
+
+            )
+            }
+          
+
             <a href="https://github.com/zucek20" target="_blank" rel="noreferrer">
               GitHub
             </a>
@@ -51,6 +81,9 @@ export default function About() {
             </p>
             <img src={desk} alt="desk" />
           </article>
+          <NavLink to="contact" className="contact" onClick={timeoutScroll()}>
+            {isEng ? "Contact me" : "Skontaktuj się"}
+          </NavLink>
         </div>
       </section>
     </Animated>

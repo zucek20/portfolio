@@ -78,6 +78,25 @@ section.about {
       }
     }
 
+    .contact {
+      border: 2px solid $main;
+        color: $main;
+        background-color: $dark;
+        border-radius: 30px;
+        padding: 5px 15px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: 0.2s;
+        display: block;
+        margin: 100px auto;
+        width: 150px;
+        text-align: center;
+
+        &:hover {
+          color: $dark;
+          background-color: $main;
+        }
+    }
   }
 }
 

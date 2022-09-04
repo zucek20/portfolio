@@ -13,7 +13,6 @@ section.projects {
     max-width: 1200px;
     margin: auto;
     padding: 130px 5px 0 5px;
-    
 
     a.more {
       color: $main;
@@ -30,50 +29,42 @@ section.projects {
       padding-top: 20px;
     }
 
+    // single article ********
     article {
       border: 2px solid $main;
       border-radius: 20px;
-      padding: 25px 15px;
-      display: flex;
       max-width: 1000px;
       margin: 100px auto;
       background-color: #001835;
 
-      div.text {
-        width: 50%;
-
-        p {
-          text-align: left;
-        }
+      img {
+        width: 100%;
+        border-radius: 17px 17px 0 0;
       }
 
       div.other {
-        width: 50%;
-        gap: 20px;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
 
-        div.list {
-          // padding-left: 30px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+        div.text {
+          padding: 25px 15px;
+          width: 50%;
+
           p {
             text-align: left;
-            font-weight: 600;
           }
-          
         }
-            
 
-        div.top {
-          display: flex;
-          justify-content: space-between;
-
+        div.side {
           div.buttons {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             gap: 15px;
+            padding: 20px;
 
             a {
               border: 2px solid $main;
@@ -91,28 +82,16 @@ section.projects {
               }
             }
           }
-        }
-      }
-    }
-  }
-}
 
-@media screen and (max-width: 940px){
-  section.projects {
-    div.wrap{
-      article {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        div.text {
-          width: 100%;
-
-        }
-        div.other {
-          width: 100%;
-          div.top {
-            justify-content: space-around;
-            gap: 10px;
+          div.list {
+            // padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+              text-align: left;
+              font-weight: 600;
+            }
           }
         }
       }
@@ -120,13 +99,21 @@ section.projects {
   }
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 600px) {
   section.projects {
     div.wrap {
       article {
+        flex-direction: column;
+        
+        
         div.other {
           display: flex;
-          flex-direction: column-reverse;
+          flex-direction: column;
+          align-items: center;
+          div.text {
+            width: 90%;
+          }
           div.top {
             flex-direction: column-reverse;
           }
