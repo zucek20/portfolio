@@ -13,6 +13,8 @@ import designer from "../img/stack/designer.png";
 import publisher from "../img/stack/publisher.png";
 import photo from "../img/stack/photo.png";
 import tablet from "../img/tablet.svg";
+import angular from '../img/stack/angular.png'
+import typescript from '../img/stack/typescript.png'
 import { AppContext } from "../components/AppContext"
 import { useContext } from "react";
 
@@ -37,11 +39,19 @@ export default function Skills() {
 
             <div className="mainGallery">
               <figure>
+                <img src={angular} alt="angular" />
+                <p>Angular</p>
+              </figure>
+              <figure>
                 <img src={reactjs} alt="react" />
                 <p>React</p>
               </figure>
               <figure>
-                <img src={js} alt="js" />
+                <img src={typescript} alt="TypeScript" />
+                <p>TypeScript</p>
+              </figure>
+              <figure>
+                <img src={js} alt="javaScript" />
                 <p>JavaScript</p>
               </figure>
               <figure>
@@ -135,8 +145,16 @@ export default function Skills() {
 
             <div className="mainGallery">
               <figure>
+                <img src={angular} alt="angular" />
+                <p>Angular</p>
+              </figure>
+              <figure>
                 <img src={reactjs} alt="react" />
                 <p>React</p>
+              </figure>
+              <figure>
+                <img src={typescript} alt="TypeScript" />
+                <p>TypeScript</p>
               </figure>
               <figure>
                 <img src={js} alt="js" />
