@@ -73,10 +73,10 @@ export default function About() {
           <h2>{isEng ? "About me" : "Kilka słów o mnie"}</h2>
           <article>
             <p>
-              {isEng ? "I am a beginner React front-end developer who also develops in graphic design of user interfaces and creating 2D graphics." : "Jestem początkującym front-end React developerem, który rozwija się także w projektowaniu graficznym interfejsów użytkownika i tworzeniu grafik 2D."}
+              {isEng ? "I am a Angular front-end developer with UX/UI backgorund. I use TypeScript RxJs and NgRx." : "Jestem front-end developerem programującym w Angularze. Na codzień piszę w TypeScript i używam bibliotek takich jak RxJs i NgRx.  Mam dodatkowo doświadczenie w UX/UI."}
               
               <br/><br/>
-              {isEng ? "I create my own designs in Figma and the Affinity set, and then transfer them to code. Solving problems in programming gives me incomparable satisfaction every time." : "Tworze swoje własne projekty w Figmie i zestawie Affinity, by potem je przenieść na kod. Rozwiązywanie problemów w programowaniu daje mi nieporównywalną satysfakcję za każdym razem."} 
+              {isEng ? "I create my own designs in Figma, and then transfer them to code. Solving problems in programming gives me incomparable satisfaction every time." : "Tworze swoje własne projekty w Figmie, by potem je przenieść na kod. Rozwiązywanie problemów w programowaniu daje mi nieporównywalną satysfakcję za każdym razem. Z chęcią rozwijam swoje umiejętności każdego dnia."} 
               
             </p>
             <img src={desk} alt="desk" />

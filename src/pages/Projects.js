@@ -5,6 +5,8 @@ import pro1 from "../img/projekty/pro1.png";
 import pro2 from "../img/projekty/pro2.jpg";
 import pro3 from "../img/projekty/pro3.jpg";
 import pro4 from "../img/projekty/pro4.jpg";
+import pro0 from "../img/projekty/pro0.jpg";
+
 import { AppContext } from "../components/AppContext"
 import { useContext } from "react";
 
@@ -21,6 +23,44 @@ export default function Projects() {
         <div className="wrap">
           <h2>My example projects</h2>
           <p>Here are a few projects whose repositories can be found on my GitHub.</p>
+
+          <article className="company">
+            <img src={pro0} alt="projekt biuro" />
+
+              <div className="other">
+                <div className="text">
+                  <h3>Angular motivational quotes generator</h3>
+                  <p>
+                  This is an web-app developed in Angular. Its purpose is to generate random motivational quotes, or quotes based on a keyword.
+                    <br />
+                    <br />
+                    The structure includes angular routing, randimizing algoritm and additional subpages as features.
+                  </p>
+                </div>
+              <div className="side">
+                <div className="buttons">
+                  <a href="https://zucek20.github.io/JustDoApp/" target="_blank" rel="noopener noreferrer">
+                    Source code
+                  </a>
+                  <a href="https://zucek20.github.io/JustDoApp/" target="_blank" rel="noopener noreferrer">
+                    Page
+                  </a>
+                  <a href="https://www.figma.com/file/9H4SFpKI9m5RjZ9UfZjLdm/JustDoApp?node-id=0%3A1&t=edNMeo7RxatRuZpY-1" target="_blank" rel="noopener noreferrer">
+                    Figma
+                  </a>
+                </div>
+                <div className="list">
+                <p>Used tech:</p>
+                <ul>
+                  <li>Angular</li>
+                  <li>TypeScript</li>
+                  <li>Scss</li>
+                  <li>HTML</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </article>
 
           <article className="company">
             <img src={pro1} alt="projekt biuro" />
@@ -55,6 +95,42 @@ export default function Projects() {
                   <li>Framer Motion</li>
                   <li>JavaScript</li>
                   <li>Scss</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </article>
+
+          <article className="company">
+            <img src={pro4} alt="projekt biuro" />
+
+              <div className="other">
+                <div className="text">
+                <h3>Code Quiz</h3>
+                <p>
+              It is a web application written in TypeScript. Contains a quiz for developers who can test their IT knowledge with a quiz. The game also counts the player's score.
+                <br /> <br />
+                The quiz uses data structures such as nested arrays to render the data.
+              </p>
+                </div>
+              <div className="side">
+                <div className="buttons">
+                <a href="https://github.com/zucek20/CodeQuiz" target="_blank" rel="noopener noreferrer">
+                    Source code
+                  </a>
+                  <a href="https://zucek20.github.io/CodeQuiz/" target="_blank" rel="noopener noreferrer">
+                    App
+                  </a>
+                  <a href="https://www.figma.com/file/BNguR8Wp2IpL6PP346LepM/CodeQuiz" target="_blank" rel="noopener noreferrer">
+                    Figma
+                  </a>
+                </div>
+                <div className="list">
+                <p>Used tech:</p>
+                <ul>
+                  <li>TypeScript</li>
+                  <li>CSS3</li>
+                  <li>HTML5</li>
                 </ul>
               </div>
               </div>
@@ -135,44 +211,6 @@ export default function Projects() {
             </div>
           </article>
 
-          <article className="company">
-            <img src={pro4} alt="projekt biuro" />
-
-              <div className="other">
-                <div className="text">
-                <h3>Code Quiz</h3>
-                <p>
-              It is a web application written in TypeScript. Contains a quiz for developers who can test their IT knowledge with a quiz. The game also counts the player's score.
-                <br /> <br />
-                The quiz uses data structures such as nested arrays to render the data.
-              </p>
-                </div>
-              <div className="side">
-                <div className="buttons">
-                <a href="https://github.com/zucek20/CodeQuiz" target="_blank" rel="noopener noreferrer">
-                    Source code
-                  </a>
-                  <a href="https://zucek20.github.io/CodeQuiz/" target="_blank" rel="noopener noreferrer">
-                    App
-                  </a>
-                  <a href="https://www.figma.com/file/BNguR8Wp2IpL6PP346LepM/CodeQuiz" target="_blank" rel="noopener noreferrer">
-                    Figma
-                  </a>
-                </div>
-                <div className="list">
-                <p>Used tech:</p>
-                <ul>
-                  <li>TypeScript</li>
-                  <li>CSS3</li>
-                  <li>HTML5</li>
-                </ul>
-              </div>
-              </div>
-            </div>
-          </article>
-
-          
-
           <p>More projects can be found on my <a href="https://github.com/zucek20" target="_blank" rel="noopener noreferrer" className="more">GitHub</a>.</p>
         </div>
       </section>
@@ -183,6 +221,44 @@ export default function Projects() {
         <div className="wrap">
           <h2>Moje przykładowe projekty</h2>
           <p>Tu jest kilka projektów, których repozytoria można znaleźć na moim githubie.</p>
+
+          <article className="company">
+            <img src={pro0} alt="projekt biuro" />
+
+              <div className="other">
+                <div className="text">
+                  <h3>Generator cytatów motywacyjnych w Angular</h3>
+                  <p>
+                  Jest to aplikacja internetowa stworzona w Angularze. Jej celem jest wygenerowanie dla użytkownika losowych haseł motywacyjnych, lub takich, które są oparte na słowie kluczowym
+                    <br />
+                    <br />
+                    Struktura zawiera routing, algorytm generatora oraz dodatkowe podstrony jako feature.
+                  </p>
+                </div>
+              <div className="side">
+                <div className="buttons">
+                  <a href="https://zucek20.github.io/JustDoApp/" target="_blank" rel="noopener noreferrer">
+                    Kod źródłowy
+                  </a>
+                  <a href="https://zucek20.github.io/JustDoApp/" target="_blank" rel="noopener noreferrer">
+                    Strona
+                  </a>
+                  <a href="https://www.figma.com/file/9H4SFpKI9m5RjZ9UfZjLdm/JustDoApp?node-id=0%3A1&t=edNMeo7RxatRuZpY-1" target="_blank" rel="noopener noreferrer">
+                    Figma
+                  </a>
+                </div>
+                <div className="list">
+                <p>Użyta technologia:</p>
+                <ul>
+                  <li>Angular</li>
+                  <li>TypeScript</li>
+                  <li>Scss</li>
+                  <li>HTML</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </article>
 
           <article className="company">
             <img src={pro1} alt="projekt biuro" />
@@ -217,6 +293,42 @@ export default function Projects() {
                   <li>Framer Motion</li>
                   <li>JavaScript</li>
                   <li>Scss</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </article>
+
+          <article className="company">
+            <img src={pro4} alt="projekt biuro" />
+
+              <div className="other">
+                <div className="text">
+                <h3>Code Quiz</h3>
+                <p>
+                To webowa aplikacja, napisana w TypeScript. Zawiera quiz dla developerów, którzy mogą sprawdzić swoją wiedzę z dzidziny IT. 
+                <br /> <br />
+                Quiz wykorzystuje struktury danych takie jak zagnieżdżone tablice, do renderowania danych.
+              </p>
+                </div>
+              <div className="side">
+                <div className="buttons">
+                <a href="https://github.com/zucek20/CodeQuiz" target="_blank" rel="noopener noreferrer">
+                    Kod źródłowy
+                  </a>
+                  <a href="https://zucek20.github.io/CodeQuiz/" target="_blank" rel="noopener noreferrer">
+                    Aplikacja
+                  </a>
+                  <a href="https://www.figma.com/file/BNguR8Wp2IpL6PP346LepM/CodeQuiz" target="_blank" rel="noopener noreferrer">
+                    Figma
+                  </a>
+                </div>
+                <div className="list">
+                <p>Użyta technologia:</p>
+                <ul>
+                  <li>TypeScript</li>
+                  <li>CSS3</li>
+                  <li>HTML5</li>
                 </ul>
               </div>
               </div>
@@ -297,45 +409,11 @@ export default function Projects() {
             </div>
           </article>
 
-          <article className="company">
-            <img src={pro4} alt="projekt biuro" />
-
-              <div className="other">
-                <div className="text">
-                <h3>Code Quiz</h3>
-                <p>
-                To webowa aplikacja, napisana w TypeScript. Zawiera quiz dla developerów, którzy mogą sprawdzić swoją wiedzę z dzidziny IT. 
-                <br /> <br />
-                Quiz wykorzystuje struktury danych takie jak zagnieżdżone tablice, do renderowania danych.
-              </p>
-                </div>
-              <div className="side">
-                <div className="buttons">
-                <a href="https://github.com/zucek20/CodeQuiz" target="_blank" rel="noopener noreferrer">
-                    Kod źródłowy
-                  </a>
-                  <a href="https://zucek20.github.io/CodeQuiz/" target="_blank" rel="noopener noreferrer">
-                    Aplikacja
-                  </a>
-                  <a href="https://www.figma.com/file/BNguR8Wp2IpL6PP346LepM/CodeQuiz" target="_blank" rel="noopener noreferrer">
-                    Figma
-                  </a>
-                </div>
-                <div className="list">
-                <p>Użyta technologia:</p>
-                <ul>
-                  <li>TypeScript</li>
-                  <li>CSS3</li>
-                  <li>HTML5</li>
-                </ul>
-              </div>
-              </div>
-            </div>
-          </article>
+          
 
           
 
-          <p>Więcej moich projktów na <a href="https://github.com/zucek20" target="_blank" rel="noopener noreferrer" className="more">GitHub</a>.</p>
+          <p>Więcej moich projktów na <a href="https://github.com/zucek20" target="_blank" rel="noopener noreferrer" className="more">GitHubie</a>.</p>
         </div>
       </section>
     )}

@@ -15,6 +15,10 @@ import photo from "../img/stack/photo.png";
 import tablet from "../img/tablet.svg";
 import angular from '../img/stack/angular.png'
 import typescript from '../img/stack/typescript.png'
+import rxjs from '../img/stack/rxjs.png'
+import ngrx from '../img/stack/ngrx.png'
+import gitlab from '../img/stack/gitlab.png'
+
 import { AppContext } from "../components/AppContext"
 import { useContext } from "react";
 
@@ -43,12 +47,20 @@ export default function Skills() {
                 <p>Angular</p>
               </figure>
               <figure>
-                <img src={reactjs} alt="react" />
-                <p>React</p>
-              </figure>
-              <figure>
                 <img src={typescript} alt="TypeScript" />
                 <p>TypeScript</p>
+              </figure>
+              <figure>
+                <img src={rxjs} alt="react" />
+                <p>RxJs</p>
+              </figure>
+              <figure>
+                <img src={ngrx} alt="angular" />
+                <p>NgRx</p>
+              </figure>
+              <figure>
+                <img src={reactjs} alt="react" />
+                <p>React</p>
               </figure>
               <figure>
                 <img src={js} alt="javaScript" />
@@ -69,6 +81,10 @@ export default function Skills() {
               <figure>
                 <img src={git} alt="git" />
                 <p>Git</p>
+              </figure>
+              <figure>
+                <img src={gitlab} alt="git" />
+                <p>Gitlab</p>
               </figure>
             </div>
 
@@ -122,9 +138,10 @@ export default function Skills() {
               <div className="green"></div>
             </div>
             <ul>
-              <li>English - B2</li>
+              <li>English - Intermediate</li>
               <li>Ability to work in a team</li>
               <li>Ability to work under pressure</li>
+              <li>Desire to learn new technologies</li>
             </ul>
           </div>
         </div>
@@ -149,12 +166,20 @@ export default function Skills() {
                 <p>Angular</p>
               </figure>
               <figure>
-                <img src={reactjs} alt="react" />
-                <p>React</p>
-              </figure>
-              <figure>
                 <img src={typescript} alt="TypeScript" />
                 <p>TypeScript</p>
+              </figure>
+              <figure>
+                <img src={rxjs} alt="angular" />
+                <p>RxJs</p>
+              </figure>
+              <figure>
+                <img src={ngrx} alt="angular" />
+                <p>NgRx</p>
+              </figure>
+              <figure>
+                <img src={reactjs} alt="react" />
+                <p>React</p>
               </figure>
               <figure>
                 <img src={js} alt="js" />
@@ -175,6 +200,10 @@ export default function Skills() {
               <figure>
                 <img src={git} alt="git" />
                 <p>Git</p>
+              </figure>
+              <figure>
+                <img src={gitlab} alt="git" />
+                <p>Gitlab</p>
               </figure>
             </div>
 
@@ -231,9 +260,10 @@ export default function Skills() {
               <div className="green"></div>
             </div>
             <ul>
-              <li>Język Angielski - B2</li>
+              <li>Język Angielski - Średniozaawansowany</li>
               <li>Umiejętność pracy w zespole</li>
               <li>Umiejętność pracy pod presją</li>
+              <li>Chęć poznawania nowych technologii</li>
             </ul>
           </div>
         </div>
