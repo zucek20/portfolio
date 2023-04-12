@@ -34,7 +34,7 @@ export default function Projects() {
                   This is an web-app developed in Angular. Its purpose is to generate random motivational quotes, or quotes based on a keyword.
                     <br />
                     <br />
-                    The structure includes angular routing, randimizing algoritm and additional subpages as features.
+                    The structure includes angular routing, randomizing algorithm and additional subpages as features.
                   </p>
                 </div>
               <div className="side">
@@ -184,7 +184,7 @@ export default function Projects() {
                 <p>
               It is a simple application made in React. It connects to an external weather API to display below information (cloud cover, temperature and wind) about the city you have selected.
                 <br /> <br />
-                The architeture is based on separate components that data flow through.
+                The architecture is based on separate components that data flow through.
               </p>
                 </div>
               <div className="side">
@@ -265,9 +265,9 @@ export default function Projects() {
 
               <div className="other">
                 <div className="text">
-                  <h3>Komercyjna strona dla biura projekowego</h3>
+                  <h3>Komercyjna strona dla biura projektowego</h3>
                   <p>
-                  Projekt zawiera komercyjną, responsywną stronę reklamującą biuro projekowe. Jej celem jest zachęcanie odwiedzających do kontaktu z firmą.
+                  Projekt zawiera komercyjną, responsywną stronę reklamującą biuro projektowe. Jej celem jest zachęcanie odwiedzających do kontaktu z firmą.
                     <br />
                     <br />
                   Struktura zawiera standardowy routing z podzielonymi komponentami a aplikacja renderuje nawigację i sekcje niezależnie.
@@ -306,7 +306,7 @@ export default function Projects() {
                 <div className="text">
                 <h3>Code Quiz</h3>
                 <p>
-                To webowa aplikacja, napisana w TypeScript. Zawiera quiz dla developerów, którzy mogą sprawdzić swoją wiedzę z dzidziny IT. 
+                To webowa aplikacja, napisana w TypeScript. Zawiera quiz dla developerów, którzy mogą sprawdzić swoją wiedzę z dziedziny IT. 
                 <br /> <br />
                 Quiz wykorzystuje struktury danych takie jak zagnieżdżone tablice, do renderowania danych.
               </p>
@@ -413,7 +413,7 @@ export default function Projects() {
 
           
 
-          <p>Więcej moich projktów na <a href="https://github.com/zucek20" target="_blank" rel="noopener noreferrer" className="more">GitHubie</a>.</p>
+          <p>Więcej moich projektów na <a href="https://github.com/zucek20" target="_blank" rel="noopener noreferrer" className="more">GitHubie</a>.</p>
         </div>
       </section>
     )}

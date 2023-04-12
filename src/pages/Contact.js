@@ -22,7 +22,7 @@ export default function Contact() {
           <form action="https://formspree.io/f/mpznwnla" method="POST">
             <h3>Email me!</h3>
             <label>
-              Your e-mail adress:
+              Your e-mail address:
               <input type="email" name="email"/>
             </label>
             <label>

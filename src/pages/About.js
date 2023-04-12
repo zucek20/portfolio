@@ -11,7 +11,7 @@ export default function About() {
   const { isEng } = useContext(AppContext)
 
   const downloadFile = () => {
-    fetch("CV_Pawel_Izdebski.pdf").then((response) => {
+    fetch("Pawel_Izdebski_CV.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
@@ -23,7 +23,7 @@ export default function About() {
   };
 
   const downloadFileEng = () => {
-    fetch("CV_Pawel_Izdebski_eng.pdf").then((response) => {
+    fetch("Pawel_Izdebski_CV_eng.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");

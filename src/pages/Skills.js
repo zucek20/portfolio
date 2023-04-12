@@ -126,7 +126,7 @@ export default function Skills() {
                 I can use tools such as Figma to design interfaces/layouts and the Affinity software suite to create 2D graphics for projects and StyleGuides in them.
                 <br />
                 <br />
-                I can implement a responsive design dedicated to mobile devices, and use "Mobile first" techique.
+                I can implement a responsive design dedicated to mobile devices, and use "Mobile first" technique.
               </p>
               <img src={tablet} alt="graphic tablet" />
             </article>
@@ -240,7 +240,7 @@ export default function Skills() {
             <article>
               <p>
                 Oprócz programowania zajmuję się też projektowaniem stron, aplikacji webowych i ich interfejsów z
-                zachowaniem odpowiedznich praktyk UX i UI oraz estetyki.
+                zachowaniem odpowiednich praktyk UX i UI oraz estetyki.
                 <br />
                 <br />
                 Umiem posługiwać się narzędziami takimi jak Figma i zestawem programów Affinity i tworzyć w nich grafiki
@@ -260,7 +260,7 @@ export default function Skills() {
               <div className="green"></div>
             </div>
             <ul>
-              <li>Język Angielski - Średniozaawansowany</li>
+              <li>Język Angielski - średnio zaawansowany</li>
               <li>Umiejętność pracy w zespole</li>
               <li>Umiejętność pracy pod presją</li>
               <li>Chęć poznawania nowych technologii</li>
