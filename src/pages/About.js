@@ -11,7 +11,7 @@ export default function About() {
   const { isEng } = useContext(AppContext)
 
   const downloadFile = () => {
-    fetch("CV_Paweł_Izdebski.pdf").then((response) => {
+    fetch("CV_Pawel_Izdebski.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
@@ -23,7 +23,7 @@ export default function About() {
   };
 
   const downloadFileEng = () => {
-    fetch("CV_Pawel_Izdebski_ENG.pdf").then((response) => {
+    fetch("CV_Pawel_Izdebski_eng.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
@@ -73,7 +73,7 @@ export default function About() {
           <h2>{isEng ? "About me" : "Kilka słów o mnie"}</h2>
           <article>
             <p>
-              {isEng ? "I am a Angular front-end developer with UX/UI backgorund. I use TypeScript RxJs and NgRx." : "Jestem front-end developerem programującym w Angularze. Na codzień piszę w TypeScript i używam bibliotek takich jak RxJs i NgRx.  Mam dodatkowo doświadczenie w UX/UI."}
+              {isEng ? "I am a Angular front-end developer with UX/UI background. I use TypeScript, RxJs and NgRx." : "Jestem front-end developerem programującym w Angularze. Na co dzień piszę w TypeScript i używam bibliotek takich jak RxJs i NgRx.  Mam dodatkowo doświadczenie w UX/UI."}
               
               <br/><br/>
               {isEng ? "I create my own designs in Figma, and then transfer them to code. Solving problems in programming gives me incomparable satisfaction every time." : "Tworze swoje własne projekty w Figmie, by potem je przenieść na kod. Rozwiązywanie problemów w programowaniu daje mi nieporównywalną satysfakcję za każdym razem. Z chęcią rozwijam swoje umiejętności każdego dnia."} 
